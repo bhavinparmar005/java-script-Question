@@ -1,0 +1,49 @@
+<script>
+  function addition(a, b) {
+    return a + b;
+  }
+
+  function subtraction(a, b) {
+    return a - b;
+  }
+
+  function multiplication(a, b) {
+    return a * b;
+  }
+  function division(a, b) {
+    return a / b;
+  }
+
+  function Modulo(a, b) {
+    return a % b;
+  }
+
+  let a = parseFloat(prompt("Enter a frist number:"));
+  let b = parseFloat(prompt("Enter a frist number:"));
+
+  let operator = prompt("Enter operator (+,-,*,/,%):");
+
+  switch (operator) {
+    case "+":
+      console.log(` a +b additions :- ${addition(a, b)}`);
+      break;
+
+    case "-":
+      console.log(` a - b subtraction :- ${subtraction(a, b)}`);
+      break;
+
+    case "*":
+      console.log(` a * b multiplication :- ${multiplication(a, b)}`);
+      break;
+
+    case "/":
+      console.log(` a / b division :- ${division(a, b)}`);
+      break;
+
+    case "%":
+      console.log(` a % b Modulo:- ${Modulo(a, b)}`);
+      break;
+    default:
+      console.log("En valid input ");
+  }
+</script>

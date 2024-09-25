@@ -1,0 +1,27 @@
+<script>
+  function gstCounter(yourAmount) {
+    let gst = yourAmount * 0.18;
+
+    return gst;
+  }
+
+  function discountYourProduct(result, yourAmount) {
+    let discount = result -(yourAmount * 0.10);
+
+    return discount;
+  }
+
+  let yourAmount = parseFloat(
+    prompt("Enter your bill amount to cont your gst and discount:")
+  );
+
+  let result = gstCounter(yourAmount);
+
+  console.log(`your amount is ${yourAmount}`);
+
+  let totalPrice = discountYourProduct(result, yourAmount);
+
+  console.log(` your amount with  GST is : ${result}`);
+
+  console.log(totalPrice);
+</script>
