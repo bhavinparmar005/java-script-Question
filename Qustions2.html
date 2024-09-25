@@ -6,7 +6,7 @@
   }
 
   function discountYourProduct(result, yourAmount) {
-    let discount = result -(yourAmount * 0.10);
+    let discount = (result + yourAmount) * 0.1;
 
     return discount;
   }
@@ -21,7 +21,11 @@
 
   let totalPrice = discountYourProduct(result, yourAmount);
 
-  console.log(` your amount with  GST is : ${result}`);
+  console.log(`your amount with  GST is : ${result}`);
 
-  console.log(totalPrice);
+  if (result + yourAmount >= 1000) {
+    console.log("your final amount : ", result + yourAmount - totalPrice);
+  } else {
+    console.log("your final amount : ", result + yourAmount);
+  }
 </script>
