@@ -1,0 +1,53 @@
+<script>
+  // Array destrucharing
+
+  let array = [];
+
+  let len = parseFloat(prompt("Enter your lenth :"));
+
+  for(let i=0;i<len;i++){
+    array.push(parseFloat(prompt("Enter a value .")))
+  }
+
+  if(array.length == 1){
+    let[a]=array;
+    console.log(`A = ${a}`);
+  }else if(array.length == 2){
+    let[a,b]=array;
+    console.log(`A = ${a}`);
+    console.log(`B = ${b}`);
+  }else if(array.length == 3){
+    let[a,b,c]=array;
+    console.log(`A = ${a}`);
+    console.log(`B = ${b}`);
+    console.log(`C = ${c}`);
+  }else if(array.length == 4){
+    let[a,b,c,d]=array;
+    console.log(`A = ${a}`);
+    console.log(`B = ${b}`);
+    console.log(`C = ${c}`);
+    console.log(`D = ${d}`);
+  }else if(array.length == 5){
+    let[a,b,c,d,e]=array;
+    console.log(`A = ${a}`);
+    console.log(`B = ${b}`);
+    console.log(`C = ${c}`);
+    console.log(`D = ${d}`);
+    console.log(`E = ${e}`);
+  }else{
+    let[a,b,c,d,e,...hello]=array;
+    console.log(`A = ${a}`);
+    console.log(`B = ${b}`);
+    console.log(`C = ${c}`);
+    console.log(`D = ${d}`);
+    console.log(`E = ${e}`);
+    console.log(`Anther array is :${hello}`);
+  }
+  
+
+  
+
+
+
+
+</script>

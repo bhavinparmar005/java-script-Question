@@ -1,0 +1,20 @@
+<script>
+    //  Q2.find odd Number sum of all odd number with user input 
+
+ let userInput = parseFloat(prompt("Enter array length ."));
+ 
+let newArray=[];
+let oddSum = 0;
+
+for(let i=0; i<userInput;i++){
+
+    newArray.push(parseFloat(prompt(`Enter a number :- ${i+1}.`)));
+}
+
+for(let j=0; j<newArray.length;j++){
+    if(newArray[j] % 2 !=0){
+        oddSum += newArray[j];
+    }
+}
+console.log(`oll odd number sum of :- ${oddSum}`);
+</script>

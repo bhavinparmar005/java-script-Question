@@ -1,0 +1,29 @@
+<script>
+    // find min number given array with functions
+
+    let findMinNumber = (arry)=>{
+       arry.forEach(element => {
+        console.log(element);
+       });
+
+        let min = arry[0];
+
+        for(let i=0; i<arry.length;i++){
+           
+
+            if(arry[i] < min){
+                min = arry[i];
+            }
+        }
+        return min;
+
+    
+    }
+
+
+    let arry =[21,22,35,65,9,34,56,76];
+
+    let minNumber = findMinNumber(arry);
+
+    console.log(`Minmum Number is ${minNumber}`);
+</script>
